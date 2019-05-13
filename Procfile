@@ -1,1 +1,1 @@
-worker: python onigiri.py
+worker: python jinjinjara.py

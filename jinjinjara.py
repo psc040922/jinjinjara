@@ -26,12 +26,12 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     fmt = '{1.name}에 온것을 환영합니다. {0.mention}환자님'
-    channel = member.server.get_channel("574856464347430914")
+    channel = member.server.get_channel("570212241140613120")
     await client.send_message(channel, fmt.format(member, member.server))
  
 @client.event
 async def on_member_remove(member):
-    channel = member.server.get_channel("453817631603032067")
+    channel = member.server.get_channel("570212241140613120")
     fmt = '{0.mention} 님이 정신병동을 퇴원하셨습니다.'
     await client.send_message(channel, fmt.format(member, member.server))
 
@@ -356,4 +356,4 @@ async def on_message(message):
 
         await client.send_message(message.channel,embed=embed)
         
-client.run('NTU2NDQ5MzY3ODYzNTkwOTIz.D255bA.M-qkDOV3_o8B0SGkpMOZwq2cRJk')
+client.run('NTcwMjE3MTY5NjYxNzIyNjY0.XNlrWA.3n4ZOqw6XrNmtXmp7rem3vMqU5M')

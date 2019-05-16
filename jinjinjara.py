@@ -116,7 +116,7 @@ async def on_message(message):
         await client.send_file(message.channel, '머쓱.png')
 
     if message.content.startswith('/청소'):
-        if message.author.id == "342522847823921154" or message.author.id == "430377165629161482" or message.author.id == "339613968320561154" or message.author.id == "268611192392515584":
+        if message.author.id == "430377165629161482" or message.author.id == "403389996582567937":
             clear = message.content.split(" ")
             async for m in client.logs_from(message.channel, limit=int(clear[1])):
                await client.delete_message(m)
